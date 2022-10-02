@@ -1,5 +1,5 @@
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import models.User;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -19,6 +19,30 @@ public class Login_Tests extends TestBase {
         app.getHelperUser().openLoginRegistrationForm();
         app.getHelperUser().fillLoginRegistrationForm("marinatest@gmail.com", "MarinaTest_123");
         app.getHelperUser().submitLogin();
+        app.getHelperUser().pause(2000);
+        Assert.assertTrue(app.getHelperUser().isLogged());
+    }
+
+    @Test
+    public void loginSuccessModel() {
+
+        User user = new User().setEmail("marinatest@gmail.com").setPassword("MarinaTest_123");
+
+        app.getHelperUser().openLoginRegistrationForm();
+        app.getHelperUser().fillLoginRegistrationForm(user);
+        app.getHelperUser().submitLogin();
+        app.getHelperUser().pause(2000);
+        Assert.assertTrue(app.getHelperUser().isLogged());
+    }
+
+    @Test
+    public void loginNegativeWrongEmailFormat() {
+        app.getHelperUser().openLoginRegistrationForm();
+        app.getHelperUser().fillLoginRegistrationForm(new User().setEmail("marinatestgmail.com").setPassword("MarinaTest_123"));
+        app.getHelperUser().submitLogin();
+        app.getHelperUser().pause(2000);
+        Assert.assertTrue(app.getHelperUser().isAlertPresent());
+        Assert.assertTrue(app.getHelperUser().isErrorWrongFormat());
     }
 
 

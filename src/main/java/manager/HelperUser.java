@@ -1,9 +1,15 @@
 package manager;
 
+import models.User;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.List;
 
 public class HelperUser extends HelperBase {
@@ -31,15 +37,14 @@ public class HelperUser extends HelperBase {
 
 
     public void fillLoginRegistrationForm(String email, String password) {
-        WebElement inputEmail = wd.findElement(By.xpath("//input[@placeholder='Email']"));
-        inputEmail.click(); // ставим курсор в поле для ввода
-        inputEmail.clear(); // очистить поле перед тем, как печатать в нем
-        inputEmail.sendKeys(email);
+        type(By.xpath("//input[@placeholder='Email']"), email);
+        type(By.xpath("//input[@placeholder='Password']"), password);
 
-        WebElement inputPassword = wd.findElement(By.xpath("//input[@placeholder='Password']"));
-        inputPassword.click();
-        inputPassword.clear();
-        inputPassword.sendKeys(password);
+    }
+
+    public void fillLoginRegistrationForm(User user) {
+        type(By.xpath("//input[@placeholder='Email']"), user.getEmail());
+        type(By.xpath("//input[@placeholder='Password']"), user.getPassword());
 
     }
 
@@ -49,5 +54,38 @@ public class HelperUser extends HelperBase {
         // //*[text()=" Login"]
 
         loginButton.click();
+    }
+
+    public boolean isAlertPresent() {
+        Alert alert = wd.switchTo().alert(); //переключить фокус веб драйвера на окно алерта
+        if (alert == null) return false;
+        return true;
+    }
+
+    public boolean isErrorWrongFormat() {
+        Alert alert = wd.switchTo().alert();
+        String errorText = alert.getText(); //получить текст алерта
+        alert.accept(); //клик на кнопку ОК
+        // alert.dismiss(); - клик на кнопку cancel
+        // alert.sendKeys("text"); - если в алерт нужно вписать текст
+        return errorText.contains("Wrong email or password format");
+    }
+
+    public boolean isErrorUserExists() {
+        Alert alert = wd.switchTo().alert();
+        String errorText = alert.getText();
+        alert.accept();
+        return errorText.contains("User already exist");
+    }
+
+
+    public void submitRegistration() {
+        wd.findElement(By.xpath("//button[2]")).click();
+    }
+
+    public void login(User user){
+        openLoginRegistrationForm();
+        fillLoginRegistrationForm(user);
+        submitLogin();
     }
 }
