@@ -1,0 +1,116 @@
+14:01:12.013 INFO  manager.ApplicationManager - Chrome Driver was opened
+14:01:16.253 INFO  manager.ApplicationManager - Current URL is ---> https://contacts-app.tobbymarshall815.vercel.app/home
+14:01:16.283 INFO  TestBase - START TEST with name: registrationSuccess
+14:01:16.285 INFO  manager.ListenerWD - Before Find Elements By ---> By.xpath: //button[text()='Sign Out']
+14:01:21.343 INFO  manager.ListenerWD - After Find Elements By ---> By.xpath: //button[text()='Sign Out']
+14:01:21.344 INFO  manager.ListenerWD - List size is ---> 0
+14:01:21.345 INFO  manager.ListenerWD - Before Find Element By ---> By.xpath: //a[@href='/login']
+14:01:21.364 INFO  manager.ListenerWD - After Find Element By ---> By.xpath: //a[@href='/login']
+14:01:21.400 INFO  manager.ListenerWD - Before Find Element By ---> By.xpath: //input[@placeholder='Email']
+14:01:21.417 INFO  manager.ListenerWD - After Find Element By ---> By.xpath: //input[@placeholder='Email']
+14:01:21.485 INFO  manager.ListenerWD - Before Find Element By ---> By.xpath: //input[@placeholder='Password']
+14:01:21.500 INFO  manager.ListenerWD - After Find Element By ---> By.xpath: //input[@placeholder='Password']
+14:01:21.567 INFO  manager.ListenerWD - Before Find Element By ---> By.xpath: //button[2]
+14:01:21.581 INFO  manager.ListenerWD - After Find Element By ---> By.xpath: //button[2]
+14:01:23.611 INFO  manager.ListenerWD - Before Find Elements By ---> By.xpath: //button[text()='Sign Out']
+14:01:23.621 INFO  manager.ListenerWD - We have a 'problem'
+14:01:23.622 INFO  manager.ListenerWD - The Error Method name ---> findElements
+14:01:23.624 INFO  manager.ListenerWD - Error Description ---> org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Wrong email or password format
+            Email must contains one @ and minimum 2 symbols after last dot
+            Password must contain at least one uppercase letter!
+            Password must contain at least one lowercase letter!
+            Password must contain at least one digit!
+            Password must contain at least one special symbol from [‘$’,’~’,’-‘,’_’]!}
+  (Session info: chrome=106.0.5249.119): Wrong email or password format
+            Email must contains one @ and minimum 2 symbols after last dot
+            Password must contain at least one uppercase letter!
+            Password must contain at least one lowercase letter!
+            Password must contain at least one digit!
+            Password must contain at least one special symbol from [‘$’,’~’,’-‘,’_’]!
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-MEFJ5G1', ip: '192.168.57.222', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d6c8ad85e1731bda0f07e1d4a4dc713d, findElements {using=xpath, value=//button[text()='Sign Out']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\UserONE\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59689}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59689/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d6c8ad85e1731bda0f07e1d4a4dc713d
+14:01:23.625 INFO  manager.ListenerWD - Screen with error is ---> 'screen'1151
+14:01:23.911 INFO  TestBase - START TEST with name: registrationSuccess
+14:01:23.912 INFO  manager.ListenerWD - Before Find Elements By ---> By.xpath: //button[text()='Sign Out']
+14:01:28.951 INFO  manager.ListenerWD - After Find Elements By ---> By.xpath: //button[text()='Sign Out']
+14:01:28.951 INFO  manager.ListenerWD - List size is ---> 0
+14:01:28.952 INFO  manager.ListenerWD - Before Find Element By ---> By.xpath: //a[@href='/login']
+14:01:28.963 INFO  manager.ListenerWD - After Find Element By ---> By.xpath: //a[@href='/login']
+14:01:28.991 INFO  manager.ListenerWD - Before Find Element By ---> By.xpath: //input[@placeholder='Email']
+14:01:29.005 INFO  manager.ListenerWD - After Find Element By ---> By.xpath: //input[@placeholder='Email']
+14:01:29.081 INFO  manager.ListenerWD - Before Find Element By ---> By.xpath: //input[@placeholder='Password']
+14:01:29.095 INFO  manager.ListenerWD - After Find Element By ---> By.xpath: //input[@placeholder='Password']
+14:01:29.163 INFO  manager.ListenerWD - Before Find Element By ---> By.xpath: //button[2]
+14:01:29.173 INFO  manager.ListenerWD - After Find Element By ---> By.xpath: //button[2]
+14:01:31.204 INFO  manager.ListenerWD - Before Find Elements By ---> By.xpath: //button[text()='Sign Out']
+14:01:31.208 INFO  manager.ListenerWD - We have a 'problem'
+14:01:31.208 INFO  manager.ListenerWD - The Error Method name ---> findElements
+14:01:31.208 INFO  manager.ListenerWD - Error Description ---> org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Wrong email or password format
+            Email must contains one @ and minimum 2 symbols after last dot
+            Password must contain at least one uppercase letter!
+            Password must contain at least one lowercase letter!
+            Password must contain at least one digit!
+            Password must contain at least one special symbol from [‘$’,’~’,’-‘,’_’]!}
+  (Session info: chrome=106.0.5249.119): Wrong email or password format
+            Email must contains one @ and minimum 2 symbols after last dot
+            Password must contain at least one uppercase letter!
+            Password must contain at least one lowercase letter!
+            Password must contain at least one digit!
+            Password must contain at least one special symbol from [‘$’,’~’,’-‘,’_’]!
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-MEFJ5G1', ip: '192.168.57.222', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d6c8ad85e1731bda0f07e1d4a4dc713d, findElements {using=xpath, value=//button[text()='Sign Out']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\UserONE\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59689}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59689/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d6c8ad85e1731bda0f07e1d4a4dc713d
+14:01:31.209 INFO  manager.ListenerWD - Screen with error is ---> 'screen'1436
+14:01:31.475 INFO  TestBase - START TEST with name: registrationSuccess
+14:01:31.476 INFO  manager.ListenerWD - Before Find Elements By ---> By.xpath: //button[text()='Sign Out']
+14:01:36.520 INFO  manager.ListenerWD - After Find Elements By ---> By.xpath: //button[text()='Sign Out']
+14:01:36.520 INFO  manager.ListenerWD - List size is ---> 0
+14:01:36.521 INFO  manager.ListenerWD - Before Find Element By ---> By.xpath: //a[@href='/login']
+14:01:36.533 INFO  manager.ListenerWD - After Find Element By ---> By.xpath: //a[@href='/login']
+14:01:36.546 INFO  manager.ListenerWD - Before Find Element By ---> By.xpath: //input[@placeholder='Email']
+14:01:36.557 INFO  manager.ListenerWD - After Find Element By ---> By.xpath: //input[@placeholder='Email']
+14:01:36.626 INFO  manager.ListenerWD - Before Find Element By ---> By.xpath: //input[@placeholder='Password']
+14:01:36.635 INFO  manager.ListenerWD - After Find Element By ---> By.xpath: //input[@placeholder='Password']
+14:01:36.696 INFO  manager.ListenerWD - Before Find Element By ---> By.xpath: //button[2]
+14:01:36.707 INFO  manager.ListenerWD - After Find Element By ---> By.xpath: //button[2]
+14:01:38.738 INFO  manager.ListenerWD - Before Find Elements By ---> By.xpath: //button[text()='Sign Out']
+14:01:38.742 INFO  manager.ListenerWD - We have a 'problem'
+14:01:38.743 INFO  manager.ListenerWD - The Error Method name ---> findElements
+14:01:38.743 INFO  manager.ListenerWD - Error Description ---> org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Wrong email or password format
+            Email must contains one @ and minimum 2 symbols after last dot
+            Password must contain at least one uppercase letter!
+            Password must contain at least one lowercase letter!
+            Password must contain at least one digit!
+            Password must contain at least one special symbol from [‘$’,’~’,’-‘,’_’]!}
+  (Session info: chrome=106.0.5249.119): Wrong email or password format
+            Email must contains one @ and minimum 2 symbols after last dot
+            Password must contain at least one uppercase letter!
+            Password must contain at least one lowercase letter!
+            Password must contain at least one digit!
+            Password must contain at least one special symbol from [‘$’,’~’,’-‘,’_’]!
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-MEFJ5G1', ip: '192.168.57.222', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d6c8ad85e1731bda0f07e1d4a4dc713d, findElements {using=xpath, value=//button[text()='Sign Out']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\UserONE\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59689}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59689/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d6c8ad85e1731bda0f07e1d4a4dc713d
+14:01:38.743 INFO  manager.ListenerWD - Screen with error is ---> 'screen'1260
+14:01:39.005 INFO  TestBase - START TEST with name: registrationSuccess
+14:01:39.005 INFO  manager.ListenerWD - Before Find Elements By ---> By.xpath: //button[text()='Sign Out']
+14:01:44.186 INFO  manager.ListenerWD - We have a 'problem'
+14:01:44.186 INFO  manager.ListenerWD - The Error Method name ---> findElements
+14:01:44.186 INFO  manager.ListenerWD - Error Description ---> org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-MEFJ5G1', ip: '192.168.57.222', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d6c8ad85e1731bda0f07e1d4a4dc713d, findElements {using=xpath, value=//button[text()='Sign Out']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\UserONE\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59689}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59689/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d6c8ad85e1731bda0f07e1d4a4dc713d
+14:01:44.187 INFO  manager.ListenerWD - Screen with error is ---> 'screen'1092

@@ -1,0 +1,19 @@
+15:29:35.151 INFO  manager.ApplicationManager - Chrome Driver was opened
+15:29:37.594 INFO  manager.ApplicationManager - Current URL is ---> https://contacts-app.tobbymarshall815.vercel.app/home
+15:29:37.621 INFO  TestBase - START TEST with name: addContactSuccess
+15:29:37.622 INFO  manager.ListenerWD - Before Find Elements By ---> By.xpath: //button[text()='Sign Out']
+15:29:42.671 INFO  manager.ListenerWD - After Find Elements By ---> By.xpath: //button[text()='Sign Out']
+15:29:42.672 INFO  manager.ListenerWD - List size is ---> 0
+15:29:42.673 INFO  manager.ListenerWD - Before Find Element By ---> By.xpath: //a[@href='/lo']
+15:29:47.731 INFO  manager.ListenerWD - We have a 'problem'
+15:29:47.731 INFO  manager.ListenerWD - The Error Method name ---> findElement
+15:29:47.733 INFO  manager.ListenerWD - Error Description ---> org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='/lo']"}
+  (Session info: chrome=106.0.5249.91)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-MEFJ5G1', ip: '192.168.229.222', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [849b8acd6298e47fba9234730a1f2829, findElement {using=xpath, value=//a[@href='/lo']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.91, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\UserONE\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60862}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60862/devtoo..., se:cdpVersion: 106.0.5249.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 849b8acd6298e47fba9234730a1f2829
+15:29:47.734 INFO  manager.ListenerWD - Screen with error is ---> 'screen'1731

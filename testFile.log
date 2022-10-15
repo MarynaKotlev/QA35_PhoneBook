@@ -1,0 +1,3 @@
+20:50:42.621 INFO  TestBase - Test starts with name ---> LoginSuccess
+20:50:42.808 INFO  TestBase - User logins with data ---> email: marinatest@gmail.com, password: MarinaTest_123
+20:50:44.853 INFO  TestBase - Assert passed

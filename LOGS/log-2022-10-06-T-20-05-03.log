@@ -1,0 +1,21 @@
+20:05:05.236 INFO  manager.ApplicationManager - Chrome Driver was opened
+20:05:12.016 INFO  manager.ApplicationManager - Current URL is ---> https://contacts-app.tobbymarshall815.vercel.app/home
+20:05:12.045 INFO  TestBase - START TEST with name: loginSuccess
+20:05:12.046 INFO  TestBase - START checking authorization
+20:05:12.046 INFO  manager.ListenerWD - Before Find Elements By ---> By.xpath: //button[text()='Sign Out']
+20:05:17.102 INFO  manager.ListenerWD - After Find Elements By ---> By.xpath: //button[text()='Sign Out']
+20:05:17.103 INFO  manager.ListenerWD - List size is ---> 0
+20:05:17.104 INFO  TestBase - Test was NOT needed in Logout
+20:05:17.105 INFO  manager.ListenerWD - Before Find Element By ---> By.xpath: //a[@href='/lo']
+20:05:22.144 INFO  manager.ListenerWD - We have a 'problem'
+20:05:22.144 INFO  manager.ListenerWD - The Error Method name ---> findElement
+20:05:22.146 INFO  manager.ListenerWD - Error Description ---> org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='/lo']"}
+  (Session info: chrome=106.0.5249.91)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-MEFJ5G1', ip: '192.168.229.222', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c0ac5fad982d1bd1d681bfcf728b7e54, findElement {using=xpath, value=//a[@href='/lo']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.91, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\UserONE\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50529}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50529/devtoo..., se:cdpVersion: 106.0.5249.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c0ac5fad982d1bd1d681bfcf728b7e54
+20:05:22.147 INFO  manager.ListenerWD - Screen with error is ---> 'screen'1812

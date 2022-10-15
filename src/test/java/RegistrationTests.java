@@ -1,3 +1,4 @@
+import manager.DataProviderUser;
 import models.User;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -11,11 +12,10 @@ public class RegistrationTests extends TestBase{
         }
     }
 
-    @Test
-    public void registrationSuccess(){
-        int i = (int) (System.currentTimeMillis()/1000)%3600;
+    @Test (dataProvider = "registrationDataSuccess", dataProviderClass = DataProviderUser.class)
+    public void registrationSuccess(String email, String password){
         app.getHelperUser().openLoginRegistrationForm();
-        app.getHelperUser().fillLoginRegistrationForm("test"+i+"@gmail.com", "MarinaTest_123");
+        app.getHelperUser().fillLoginRegistrationForm(email, password);
         app.getHelperUser().submitRegistration();
         app.getHelperUser().pause(2000);
         Assert.assertTrue(app.getHelperUser().isLogged());
